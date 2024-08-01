@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Películas y Series</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/functions.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <i class="header__logo"><img src="img/imdb-logo.jpg" alt="Logo IMDB"></i>
+
+        <article class="header__menu">
+
+            <section class="header__button">
+                <button class="menu__button">Todo</button>
+                <input type="search" name="busqueda" id="search__bar-primary" placeholder="Buscar...">
+                <button id="search-button">Buscar</button>
+            </section>
+
+            <section class="menu__topic">
+                <img src="img/search.svg" alt="" class="topic__all">
+                <h2 class="topic__all--title">Todo</h2>
+            </section>
+
+            <section class="menu__topic">
+                <img src="img/film.svg" alt="" class="topic__movies">
+                <h2 class="topic__movies--title">Películas</h2>
+            </section>
+
+            <section class="menu__topic">
+                <img src="img/tv.svg" alt="" class="topic__series">
+                <h2 class="topic__series--title">Series</h2>
+            </section>
+
+        </article>
+        
+    </header>
+    <main class="main">
+        <article class="show-grid" id="show-grid">
+            <!-- Tarjetas de shows se agregarán aquí dinámicamente -->
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
